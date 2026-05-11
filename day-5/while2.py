@@ -1,0 +1,18 @@
+# 숫자 입력-> 출력 반복, 0을 입력하면 종료
+
+a=True
+while a: #True(참) 반복, 거짓이면 탈출
+    num=int(input("숫자 입력:"))
+    print(num)
+    if num == 0:
+        a = False
+print("반복문 종료")
+
+print("="*20)
+
+menu=["쫄면","감밥","냉면","오뎅"]
+b=input("메뉴 선택")
+while b in menu:
+    print(b)
+    b=input("메뉴 선택")
+    # while 문장안에서 반드시 것짓을 변경되는 문장이 나와야 한다
